@@ -11,160 +11,23 @@
 > [!IMPORTANT]
 > Make sure your computer is ready to complete the assignment
 
-<details><summary>Windows, Mac, Linux</summary>
-<p>
-
-- [ ] Step 0. Open Terminal
-
-  > Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
-
-  > You should have already prepared your computer during Lecture 0.  If you did not then:  
-
-  > * Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
-  >    * If you are having difficulty installing ubuntu, use Launch if your account is activated.
-
-- [ ] Step 1. Update Your apps
-
-  > It's always a good idea to keep your apps in your terminal up to date. 
-  
-  > For Ubuntu (Linux), enter the following commands to load the newest versions of your apps
-
-  ```bash
-  sudo apt update
-  sudo apt upgrade
-  ```
-
-  > For Mac (Homebrew), enter the following commands to load the newest versions of your apps
-
-  ```bash
-  brew update
-  brew upgrade
-  ```
-
-- [ ] Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
-
-    > In your terminal, enter the following commands:
-
-    ```bash
-    # make sure you're in your home dir
-    cd ~
-    
-    # list the directories and files in the CSB dir to confirm it's in your home dir
-    ls CSB
-    ```
-
-    > You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
-
-    ```bash
-    LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
-    ```
-
-    > If you see the output above, you're done! Goto the next section.
-
-- [ ] Step 3. If you didn't have the CSB Repo, clone it now
-
-  > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
-
-    ```bash
-        git clone https://github.com/CSB-book/CSB.git
-    ``` 
-
-  > You should see the following output:
-
-    ```bash
-    Cloning into 'CSB'...
-    remote: Enumerating objects: 1005, done.
-    remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
-    Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
-    Resolving deltas: 100% (389/389), done.
-    ```
-
-  > Goto Step 2 above.
-
-<hr style="height: 0.1px; border: none; background-color: black;">
-
-</p>
-</details>
-
-<details><summary>ChromeOS, iOS, Android</summary>
-<p>
-
- - [ ] Step 0. [Log Into Launch HPC](https://portal-launch.hprc.tamu.edu/)
-
-    > Use the following [link](https://portal-launch.hprc.tamu.edu/) to log in 
-
-    > You should have already created your account during Lecture 0.  If you did not then:  
-    > * Complete the tasks listed in the [Accessing Launch Instructions](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
-
- - [ ] Step 1. Open Terminal
-
-    > Select `launch Shell Access`
-
- - [ ] Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
-
-  > In your terminal, enter the following commands:
-
-    ```bash
-    # make sure you're in your home dir
-    cd ~
-
-    # list the directories and files in the CSB dir to confirm it's in your home dir
-    ls CSB
-    ```
-
-  > You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
-
-    ```bash
-    LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
-    ```
-
-  > If you see the output above, you're done! Goto the next section.
-
-- [ ] Step 3. If you didn't have the CSB Repo, clone it now
-
-  > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
-
-    ```bash
-        git clone https://github.com/CSB-book/CSB.git
-    ``` 
-
-  > You should see the following output:
-
-    ```bash
-    Cloning into 'CSB'...
-    remote: Enumerating objects: 1005, done.
-    remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
-    Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
-    Resolving deltas: 100% (389/389), done.
-    ```
-
-  > Goto Step 2 above.
-
- </p>
-</details>
-
+Use GitHub Codespaces to complete this assignment.  These instructions were customized for codespaces.
 
 ---
 
 
 ## Description of Assignment
 
-We are also going to flip the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.  This material is covered in ch 1.6 of the CSB book.
+We are going to flip the classroom again next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.  This material is covered in ch 1.6 of the CSB book.
 
-<details><summary>Work through remainder of Lecture 01 & Complete Mind Expander 01.02</summary>
+<details><summary>Work through remainder of Lecture 01 & Complete the Mind Expanders</summary>
 <p>
 
-Work through the remainder of [lecture 1](../lectures/lecture01.md).  To help you learn `bash`, you are expected to type in or copy and paste the commands in the
+Work through the remainder of [lecture 1](https://github.com/tamucc-comp-bio/classroom_repo_2025/blob/main/lectures/lecture01.md).  To help you learn `bash`, you are expected to run the commands in the
 
 ```
 code blocks
 ```
-
-Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
-
-* **_You can resubmit your answers as neccessary_**
-
-* **_I highly recommend that you first record your answers in a text document in either [Notepad++ for Win](https://notepad-plus-plus.org/downloads/) or [BBedit for Mac](https://www.barebones.com/products/bbedit/) and save them to your computer_**. 
 
 </p>
 </details>
