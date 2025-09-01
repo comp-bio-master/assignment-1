@@ -41,6 +41,15 @@ Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pip
 
 Complete the [Finding Things](https://swcarpentry.github.io/shell-novice/07-find.html) tutorial on software carpentry
 
+> [!NOTE]
+> In some of the "Challenge" boxes, scripts are discussed.  We have not yet covered scripts so you can skip over these parts.
+
+> [!NOTE]
+> We will have extra dirs and files from completing the previous lessons when compared to the example output given in Software carpentry
+
+> [!NOTE]
+> $() is a way of opening an invisible shell and running the command inside the parentheses. In this line from the Software Carpentry lesson, `grep "searching" $(find . -name "*.txt")`, `find` is run in a subshell to run `grep` for the pattern `searching` on all files ending in `.txt`.
+
 </p>
 </details>
 
