@@ -1,38 +1,131 @@
-# Assignment 1 
+# Assignment 1: Pipes, Filters, and Finding Things
 
 ## Reading for Discussion Next lecture
 
 [Wilson_etal_2017_good_enough_practices](../literature/Wilson_etal_2017_good_enough_practices_in_scientific_computing.pdf)
 
+[Complete these questions about the reading](https://forms.cloud.microsoft/r/deB63CDLgD)
+
 ---
 
 ## Computer Preparation
 
-> [!IMPORTANT]
-> Make sure your computer is ready to complete the assignment
-
-Use GitHub Codespaces to complete this assignment.  These instructions were customized for codespaces.
+Complete the [Computer Setup Checklist](../resources/computer_setup_checklist.md) which should have already been completed in the first lecture.
 
 ---
-
 
 ## Description of Assignment
 
 We are going to flip the classroom again next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.  This material is covered in ch 1.6 of the CSB book.
 
-<details><summary>Work through remainder of Lecture 01 & Complete the Mind Expanders</summary>
-<p>
+In Assignment 0, you learned how to navigate directories and work with files from the command line.
 
-Work through the remainder of [lecture 1](https://github.com/tamucc-comp-bio/classroom_repo_2025/blob/main/lectures/lecture01.md).  To help you learn `bash`, you are expected to run the commands in the
+In this assignment, you will build on those skills by learning how to:
 
+* redirect command output,
+* connect commands using pipes,
+* search inside files with `grep`,
+* find files with `find`,
+* process tabular data with commands such as `cut`, `sort`, and `uniq`,
+* combine several commands to solve larger problems, and
+* submit your work using Git.
+
+You will work **entirely inside a local clone of this Assignment 1 repository**.
+
+Keep this `README.md` open in your web browser on GitHub while working through the assignment in your terminal.
+
+---
+
+<details><summary><strong>1. Clone Your Assignment Repository</strong></summary>
+
+## Clone Your Assignment Repository
+
+When you accepted this GitHub Classroom assignment, GitHub created your own Assignment 1 repository.
+
+On the GitHub webpage for **your Assignment 1 repository**:
+
+1. Click the green **Code** button.
+2. Select **SSH**.
+3. Copy the SSH address.
+
+Go to your home directory:
+
+```bash
+cd ~
 ```
-code blocks
+
+Clone your repository, giving the local clone the name `assignment-1`:
+
+```text
+git clone YOUR-COPIED-SSH-ADDRESS assignment-1
 ```
 
-</p>
+Enter the repository:
+
+```bash
+cd assignment-1
+```
+
+Check your location:
+
+```bash
+pwd
+```
+
+Your path should end with:
+
+```text
+/assignment-1
+```
+
+List the contents:
+
+```bash
+ls
+```
+
+You should see at least:
+
+```text
+README.md
+shell-lesson-data
+CSB
+```
+
+From this point forward, all of your work will remain inside the `assignment-1` repository.
+
 </details>
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <details><summary>Software Carpentry</summary>
 <p>
