@@ -48,7 +48,7 @@ On the GitHub webpage for **your Assignment 1 repository**:
 2. Select **SSH**.
 3. Copy the SSH address.
 
-Go to your home directory:
+In your terminal, go to your home directory:
 
 ```bash
 cd ~
@@ -98,6 +98,179 @@ From this point forward, all of your work will remain inside the `assignment-1` 
 
 ---
 
+<details>
+<summary><strong>2. Pipes and Filters</strong></summary>
+
+## Pipes and Filters
+
+One of the most powerful features of Bash is the ability to combine small commands.
+
+Instead of using one large program to perform an entire task, we can connect commands that each perform one simple job.
+
+Enter the `exercise-data` directory:
+
+```bash
+cd shell-lesson-data/exercise-data
+```
+
+Look at the directory contents:
+
+```bash
+ls
+```
+
+You should see directories including:
+
+```text
+alkanes
+animal-counts
+creatures
+writing
+```
+
+### Count lines with `wc`
+
+Enter the `alkanes` directory:
+
+```bash
+cd alkanes
+```
+
+The directory contains several `.pdb` files.
+
+Count the number of lines in one file:
+
+```bash
+wc -l cubane.pdb
+```
+
+Now count the lines in every `.pdb` file:
+
+```bash
+wc -l *.pdb
+```
+
+The `*` is a wildcard that matches any sequence of characters.
+
+Therefore:
+
+```text
+*.pdb
+```
+
+matches every filename ending in `.pdb`.
+
+---
+
+### Redirect output with `>`
+
+Normally, output is printed to the terminal.
+
+You can instead redirect the output to a file:
+
+```bash
+wc -l *.pdb > lengths.txt
+```
+
+Display the new file:
+
+```bash
+cat lengths.txt
+```
+
+The general form is:
+
+```text
+command > filename
+```
+
+> ⚠️ **CAUTION:** `>` replaces the contents of the output file if the file already exists.
+
+To **append** output to an existing file instead, use:
+
+```text
+>>
+```
+
+For example:
+
+```bash
+echo "another line" >> lengths.txt
+```
+
+---
+
+### Sort output
+
+Run:
+
+```bash
+sort lengths.txt
+```
+
+By default, `sort` sorts alphabetically.
+
+To sort numerically:
+
+```bash
+sort -n lengths.txt
+```
+
+You can also use `head` to show only the beginning of the output:
+
+```bash
+sort -n lengths.txt | head
+```
+
+The vertical bar:
+
+```text
+|
+```
+
+is called a **pipe**.
+
+A pipe passes the output of the command on the left to the input of the command on the right.
+
+You can therefore do everything above without creating `lengths.txt`:
+
+```bash
+wc -l *.pdb | sort -n | head
+```
+
+You can connect more than two commands in a pipeline.
+
+For example, show the three `.pdb` files with the fewest lines:
+
+```bash
+wc -l *.pdb | sort -n | head -n 3
+```
+
+Remove the temporary file:
+
+```bash
+rm lengths.txt
+```
+
+### Key idea
+
+Read pipelines from **left to right**.
+
+For:
+
+```bash
+wc -l *.pdb | sort -n | head -n 3
+```
+
+Bash:
+
+1. counts the lines,
+2. sends those results to `sort`,
+3. sorts them numerically,
+4. sends the sorted results to `head`,
+5. displays the first three lines.
+
+</details>
 
 
 
