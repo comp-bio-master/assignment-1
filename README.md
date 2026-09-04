@@ -564,15 +564,11 @@ rm filelist.txt
 
 ### Piping Text Streams From One Command to the Next with `|`
 
+![](images/pipeline.png)
+
 ![](images/pipeline2.png)
 
-A pipe:
-
-```text
-|
-```
-
-passes the standard output from one command to the standard input of another.
+A pipe, `|`, passes the standard output from one command to the standard input of another.
 
 ❓ **QUESTION:** How many files are there in `CSB/unix/data/Saavedra2013`?
 
@@ -593,6 +589,9 @@ This eliminates the need to create `filelist.txt`.
 ---
 
 ### TSV and CSV Data Files
+In the tidy table below, columns are delimited by tabs. The first column has no column header but is the sample ID. Ozone, Solar.R, Wind, Temp, Month, and Day are all pieces of data (dimensions) describing each of the 10 samples.
+
+![](images/tsv.png)
 
 In a **tab-separated values (TSV)** file, columns are separated by tabs.
 
