@@ -426,7 +426,7 @@ The Assignment 1 repository also contains the `CSB` directory used by the *Compu
 Return to the root of your Assignment 1 repository:
 
 ```bash
-cd ../../..
+cd ~/assignment-1
 ```
 
 Move into the `sandbox` directory:
@@ -454,17 +454,9 @@ CSB/unix
 
 ### Redirection of output
 
-Redirect standard output to a file with:
+Redirect standard output to a file with: `command > filename`
 
-```text
-command > filename
-```
-
-Append standard output to a file with:
-
-```text
-command >> filename
-```
+Append standard output to a file with: `command >> filename`
 
 For example:
 
@@ -571,6 +563,8 @@ rm filelist.txt
 ---
 
 ### Piping Text Streams From One Command to the Next with `|`
+
+![](images/pipeline2.png)
 
 A pipe:
 
