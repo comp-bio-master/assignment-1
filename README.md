@@ -2,7 +2,7 @@
 
 ## Reading for Discussion Next lecture
 
-[Wilson_etal_2017_good_enough_practices](../literature/Wilson_etal_2017_good_enough_practices_in_scientific_computing.pdf)
+[Wilson_etal_2017_good_enough_practices](https://github.com/tamucc-comp-bio/classroom_repo_2026/blob/lecture2/literature/Wilson_etal_2017_good_enough_practices_in_scientific_computing.pdf)
 
 [Complete these questions about the reading](https://forms.cloud.microsoft/r/deB63CDLgD)
 
